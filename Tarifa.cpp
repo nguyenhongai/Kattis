@@ -4,17 +4,17 @@ using namespace std;
 
 int main()
 {
-    int x, n, i, me, s=0, o;
+    int x, n, i, megabytes, sum=0, output;
 
     scanf("%d\n", &x);
     scanf("%d\n", &n);
 
     for (i=1; i<=n; ++i)
     {
-        scanf("%d", &me);
-        s+=me;
+        scanf("%d", &megabytes);
+        sum+=megabytes;
     }
-    o = ((x*n)+x)-s;
+    output = ((x*n)+x)-s;
     printf("%d", o);
 
     return 0;
